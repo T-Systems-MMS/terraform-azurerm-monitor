@@ -1,5 +1,5 @@
 module "monitor" {
-  source = "../modules/azure/terraform-monitor"
+  source = "registry.terraform.io/T-Systems-MMS/monitor/azurerm"
   monitor_diagnostic_setting = {
     virtual_network.name = {
       target_resource_id         = virtual_network.id
