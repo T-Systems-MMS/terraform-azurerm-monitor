@@ -22,13 +22,9 @@ resource "azurerm_monitor_diagnostic_setting" "monitor_diagnostic_setting" {
       category = local.monitor_diagnostic_setting[each.key].log.category[log.key]
       enabled  = local.monitor_diagnostic_setting[each.key].log.enabled
 
-      dynamic "retention_policy" {
-        for_each = local.monitor_diagnostic_setting[each.key].log.retention_policy != {} ? [1] : []
-
-        content {
-          days    = local.monitor_diagnostic_setting[each.key].log.retention_policy.days
-          enabled = local.monitor_diagnostic_setting[each.key].log.retention_policy.enabled
-        }
+      retention_policy {
+        days    = local.monitor_diagnostic_setting[each.key].log.retention_policy.days
+        enabled = local.monitor_diagnostic_setting[each.key].log.retention_policy.enabled
       }
     }
   }
@@ -39,13 +35,9 @@ resource "azurerm_monitor_diagnostic_setting" "monitor_diagnostic_setting" {
       category = local.monitor_diagnostic_setting[each.key].metric.category[metric.key]
       enabled  = local.monitor_diagnostic_setting[each.key].metric.enabled
 
-      dynamic "retention_policy" {
-        for_each = local.monitor_diagnostic_setting[each.key].metric.retention_policy != {} ? [1] : []
-
-        content {
-          days    = local.monitor_diagnostic_setting[each.key].metric.retention_policy.days
-          enabled = local.monitor_diagnostic_setting[each.key].metric.retention_policy.enabled
-        }
+      retention_policy {
+        days    = local.monitor_diagnostic_setting[each.key].metric.retention_policy.days
+        enabled = local.monitor_diagnostic_setting[each.key].metric.retention_policy.enabled
       }
     }
   }

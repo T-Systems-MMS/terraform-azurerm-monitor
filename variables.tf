@@ -17,12 +17,18 @@ locals {
       log = {
         category         = []
         enabled          = false
-        retention_policy = {}
+        retention_policy = {
+          days = 0
+          enabled = false
+        }
       }
       metric = {
         category         = []
         enabled          = false
-        retention_policy = {}
+        retention_policy = {
+          days = 0
+          enabled = false
+        }
       }
     }
   }
