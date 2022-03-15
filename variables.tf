@@ -9,6 +9,11 @@ locals {
     # resource definition
     monitor_diagnostic_setting = {
       name = ""
+      eventhub_name = null
+      eventhub_authorization_rule_id = null
+      log_analytics_workspace_id = null
+      log_analytics_destination_type = null
+      storage_account_id = null
       log = {
         category         = []
         enabled          = false
