@@ -8,16 +8,27 @@ locals {
   default = {
     # resource definition
     monitor_diagnostic_setting = {
-      name = ""
+      name                           = ""
+      eventhub_name                  = null
+      eventhub_authorization_rule_id = null
+      log_analytics_workspace_id     = null
+      log_analytics_destination_type = null
+      storage_account_id             = null
       log = {
         category         = []
         enabled          = false
-        retention_policy = {}
+        retention_policy = {
+          days = 0
+          enabled = false
+        }
       }
       metric = {
         category         = []
         enabled          = false
-        retention_policy = {}
+        retention_policy = {
+          days = 0
+          enabled = false
+        }
       }
     }
   }
