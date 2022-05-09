@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/tree/1.0.1) (2022-03-18)
+
+[Full Changelog](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/compare/1.0.0...1.0.1)
+
+**Merged pull requests:**
+
+- Add new attributes [\#1](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/pull/1) ([michaelamattes](https://github.com/michaelamattes))
+
 ## [1.0.0](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/tree/1.0.0) (2022-02-17)
 
 [Full Changelog](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/compare/df148b485546d23c05289fc58ee7a082ce590fc4...1.0.0)
