@@ -22,15 +22,25 @@ This module manages Azure Monitor and Diagnostic.
 
 | Name | Type |
 |------|------|
+| azurerm_monitor_action_group.monitor_action_group | resource |
+| azurerm_monitor_activity_log_alert.monitor_activity_log_alert | resource |
 | azurerm_monitor_diagnostic_setting.monitor_diagnostic_setting | resource |
+| azurerm_monitor_scheduled_query_rules_alert.monitor_scheduled_query_rules_alert | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| monitor_action_group | resource definition, default settings are defined within locals and merged with var settings | `any` | `{}` | no |
+| monitor_activity_log_alert | resource definition, default settings are defined within locals and merged with var settings | `any` | `{}` | no |
 | monitor_diagnostic_setting | resource definition, default settings are defined within locals and merged with var settings | `any` | `{}` | no |
+| monitor_scheduled_query_rules_alert | resource definition, default settings are defined within locals and merged with var settings | `any` | `{}` | no |
 
+## Outputs
 
+| Name | Description |
+|------|-------------|
+| monitor_action_group | azurerm_monitor_action_group results |
 
 ## Examples
 
