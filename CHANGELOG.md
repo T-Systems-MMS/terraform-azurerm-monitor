@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.0](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/tree/2.0.0) (2022-07-22)
+
+[Full Changelog](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/compare/1.0.2...2.0.0)
+
+**Merged pull requests:**
+
+- updates and new attributes for azurerm provider 3x [\#10](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/pull/10) ([michaelamattes](https://github.com/michaelamattes))
+
 ## [1.0.2](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/tree/1.0.2) (2022-05-09)
 
 [Full Changelog](https://github.com/T-Systems-MMS/terraform-azurerm-monitor/compare/1.0.1...1.0.2)
