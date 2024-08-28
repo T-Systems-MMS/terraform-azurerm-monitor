@@ -10,13 +10,13 @@ This module manages Azure Monitor and Diagnostic.
 | Name | Version |
 |------|---------|
 | terraform | >=1.0 |
-| azurerm | >=2.79 |
+| azurerm | >=2.79, <4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| azurerm | >=2.79 |
+| azurerm | >=2.79, <4.0 |
 
 ## Resources
 
